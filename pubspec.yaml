@@ -1,0 +1,4 @@
+name: dk_byte_data
+description: A ByteBuffer wrapper which incroments the index after grabbing data
+version: 1.0
+author: TheKeenProgrammer
