@@ -1,7 +1,4 @@
-import 'dart:io';
 import 'dart:typed_data';
-import 'dart:mirrors';
-import 'dk_byte_data.dart';
 
 class DKByteData {
   ByteData _data;
@@ -28,25 +25,25 @@ class DKByteData {
   }
 
   int nextUint16() {
-    int result = _data.getUint16(_i, Endianness.LITTLE_ENDIAN);
+    int result = _data.getUint16(_i, Endian.little);
     _i += 2;
     return result;
   }
 
   int nextUint() {
-    int result = _data.getUint32(_i, Endianness.LITTLE_ENDIAN);
+    int result = _data.getUint32(_i, Endian.little);
     _i += 2;
     return result;
   }
 
   int nextUint64() {
-    int result = _data.getUint64(_i, Endianness.LITTLE_ENDIAN);
+    int result = _data.getUint64(_i, Endian.little);
     _i += 8;
     return result;
   }
 
   double nextFloat() {
-    double result = _data.getFloat32(_i, Endianness.LITTLE_ENDIAN);
+    double result = _data.getFloat32(_i, Endian.little);
     _i += 4;
     return result;
   }
