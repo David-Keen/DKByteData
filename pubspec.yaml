@@ -1,6 +1,6 @@
 name: dk_byte_data
 description: A ByteBuffer wrapper which incroments the index after grabbing data
-version: 1.0.0
+version: 1.0.1
 author: TheKeenProgrammer
 
 environment:
