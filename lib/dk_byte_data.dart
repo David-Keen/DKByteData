@@ -32,7 +32,7 @@ class DKByteData {
 
   int nextUint() {
     int result = _data.getUint32(_i, Endian.little);
-    _i += 2;
+    _i += 4;
     return result;
   }
 
